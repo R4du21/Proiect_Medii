@@ -92,6 +92,7 @@
             this.passwordReg.Name = "passwordReg";
             this.passwordReg.Size = new System.Drawing.Size(100, 20);
             this.passwordReg.TabIndex = 8;
+            this.passwordReg.UseSystemPasswordChar = true;
             // 
             // textBox6
             // 
@@ -138,6 +139,7 @@
             this.registerButton.TabIndex = 12;
             this.registerButton.Text = "Register";
             this.registerButton.UseVisualStyleBackColor = true;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // amcontButton
             // 
@@ -181,6 +183,7 @@
             this.confPassReg.Name = "confPassReg";
             this.confPassReg.Size = new System.Drawing.Size(100, 20);
             this.confPassReg.TabIndex = 16;
+            this.confPassReg.UseSystemPasswordChar = true;
             // 
             // textBox5
             // 
@@ -309,7 +312,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "Dorel Auto";
+            this.Text = "Dorel Auto Scamroom";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
