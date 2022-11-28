@@ -62,7 +62,9 @@ namespace Proiect_Medii_si_Instrumente
             SqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
-                MessageBox.Show("User-ul exista.");
+                Form2 loadingForm = new Form2();
+                this.Hide();
+                loadingForm.Show();
                 conn.Close();
                 usernameLogin.Text = null;
                 passwordLogin.Text = null;

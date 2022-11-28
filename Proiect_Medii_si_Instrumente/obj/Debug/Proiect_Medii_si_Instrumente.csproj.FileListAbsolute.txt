@@ -9,3 +9,5 @@ C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Deb
 C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.exe
 C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.pdb
 C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.Form1.resources
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.Form2.resources
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.Form3.resources
