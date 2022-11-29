@@ -15,15 +15,15 @@ namespace Proiect_Medii_si_Instrumente
         #region Private Methods
         private void RegisterUser()
         {
-            SqlConnection conn = new SqlConnection(connString);
+            var conn = new SqlConnection(connString);
             var sql = "INSERT INTO Users VALUES (@username, @password)";
             var sql2 = "SELECT * FROM USERS WHERE username = @username";
             try
             {
-                SqlCommand command2 = new SqlCommand(sql2, conn);
+                var command2 = new SqlCommand(sql2, conn);
                 command2.Parameters.AddWithValue("@username", usernameReg.Text);
                 conn.Open();
-                SqlDataReader reader = command2.ExecuteReader();
+                var reader = command2.ExecuteReader();
                 if (reader.Read())
                 {
                     MessageBox.Show("Deja mai exista unu' ca tine! Alege alt username.");
@@ -32,7 +32,7 @@ namespace Proiect_Medii_si_Instrumente
                 else
                 {
                     conn.Close();
-                    SqlCommand command = new SqlCommand(sql, conn);
+                    var command = new SqlCommand(sql, conn);
                     command.Parameters.AddWithValue("@username", usernameReg.Text);
                     command.Parameters.AddWithValue("@password", passwordReg.Text);
                     conn.Open();
@@ -53,16 +53,16 @@ namespace Proiect_Medii_si_Instrumente
 
         private void LoginUser()
         {
-            SqlConnection conn = new SqlConnection(connString);
+            var conn = new SqlConnection(connString);
             var sql = "SELECT * FROM USERS WHERE username = @username AND password = @password";
-            SqlCommand command = new SqlCommand(sql, conn);
+            var command = new SqlCommand(sql, conn);
             command.Parameters.AddWithValue("@username", usernameLogin.Text);
             command.Parameters.AddWithValue("@password", passwordLogin.Text);
             conn.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
-                Form2 loadingForm = new Form2();
+                var loadingForm = new Form2();
                 this.Hide();
                 loadingForm.Show();
                 conn.Close();
