@@ -53,6 +53,7 @@
             this.sidebarTimer2 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.sidebarLeft = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -224,6 +225,7 @@
             this.passwordLogin.Name = "passwordLogin";
             this.passwordLogin.Size = new System.Drawing.Size(100, 20);
             this.passwordLogin.TabIndex = 20;
+            this.passwordLogin.UseSystemPasswordChar = true;
             // 
             // loginButton
             // 
@@ -285,12 +287,26 @@
             this.sidebarLeft.Size = new System.Drawing.Size(1, 359);
             this.sidebarLeft.TabIndex = 24;
             // 
+            // textBox7
+            // 
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox7.Location = new System.Drawing.Point(3, 617);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(84, 13);
+            this.textBox7.TabIndex = 25;
+            this.textBox7.TabStop = false;
+            this.textBox7.Text = "Created by R4du";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1087, 632);
+            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.sidebarLeft);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.sidebar);
@@ -313,7 +329,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "Dorel Auto Scamroom";
+            this.Text = "Vericu Auto";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -346,6 +362,7 @@
         private System.Windows.Forms.Timer sidebarTimer2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel sidebarLeft;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
 

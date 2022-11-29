@@ -21,39 +21,6 @@ namespace Proiect_Medii_si_Instrumente
             Image4();
         }
 
-        #region Insert New Car
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    Image img = pictureBox1.Image;
-        //    byte[] arr;
-        //    var converter = new ImageConverter();
-        //    arr = (byte[])converter.ConvertTo(img, typeof(byte[]));
-        //    var conn = new SqlConnection(connString);
-        //    conn.Open();
-        //    var sql = "INSERT INTO IMAGES VALUES (@arr, @brand, @model, @mileage, @year, @price)";
-        //    var command = new SqlCommand(sql, conn);
-        //    command.Parameters.AddWithValue("@arr", arr);
-        //    command.Parameters.AddWithValue("@brand", "Chevrolet");
-        //    command.Parameters.AddWithValue("@model", "Corvette");
-        //    command.Parameters.AddWithValue("@mileage", 45000);
-        //    command.Parameters.AddWithValue("@year", 2017);
-        //    command.Parameters.AddWithValue("@price", 30000);
-        //    command.ExecuteNonQuery();
-        //    conn.Close();
-        //}
-
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    using (var ofd = new OpenFileDialog())
-        //    {
-        //        if (ofd.ShowDialog() == DialogResult.OK)
-        //        {
-        //            pictureBox1.Image = Image.FromFile(ofd.FileName);
-        //        }
-        //    }
-        //}
-        #endregion
-
         #region Private methods
         private void Car1Sold()
         {

@@ -142,6 +142,7 @@
             this.brandLabel1.ReadOnly = true;
             this.brandLabel1.Size = new System.Drawing.Size(99, 18);
             this.brandLabel1.TabIndex = 4;
+            this.brandLabel1.TabStop = false;
             // 
             // brandText1
             // 
@@ -152,6 +153,7 @@
             this.brandText1.ReadOnly = true;
             this.brandText1.Size = new System.Drawing.Size(40, 18);
             this.brandText1.TabIndex = 5;
+            this.brandText1.TabStop = false;
             this.brandText1.Text = "Brand:";
             // 
             // modelText1
@@ -163,6 +165,7 @@
             this.modelText1.ReadOnly = true;
             this.modelText1.Size = new System.Drawing.Size(50, 18);
             this.modelText1.TabIndex = 6;
+            this.modelText1.TabStop = false;
             this.modelText1.Text = "Model:";
             // 
             // modelLabel1
@@ -175,6 +178,7 @@
             this.modelLabel1.ReadOnly = true;
             this.modelLabel1.Size = new System.Drawing.Size(99, 18);
             this.modelLabel1.TabIndex = 7;
+            this.modelLabel1.TabStop = false;
             // 
             // kmText1
             // 
@@ -185,6 +189,7 @@
             this.kmText1.ReadOnly = true;
             this.kmText1.Size = new System.Drawing.Size(40, 18);
             this.kmText1.TabIndex = 8;
+            this.kmText1.TabStop = false;
             this.kmText1.Text = "Km:";
             // 
             // kmLabel1
@@ -197,6 +202,7 @@
             this.kmLabel1.ReadOnly = true;
             this.kmLabel1.Size = new System.Drawing.Size(99, 18);
             this.kmLabel1.TabIndex = 9;
+            this.kmLabel1.TabStop = false;
             // 
             // yearText1
             // 
@@ -207,6 +213,7 @@
             this.yearText1.ReadOnly = true;
             this.yearText1.Size = new System.Drawing.Size(28, 18);
             this.yearText1.TabIndex = 10;
+            this.yearText1.TabStop = false;
             this.yearText1.Text = "An:";
             // 
             // yearLabel1
@@ -219,6 +226,7 @@
             this.yearLabel1.ReadOnly = true;
             this.yearLabel1.Size = new System.Drawing.Size(99, 18);
             this.yearLabel1.TabIndex = 11;
+            this.yearLabel1.TabStop = false;
             // 
             // priceText1
             // 
@@ -229,6 +237,7 @@
             this.priceText1.ReadOnly = true;
             this.priceText1.Size = new System.Drawing.Size(50, 18);
             this.priceText1.TabIndex = 12;
+            this.priceText1.TabStop = false;
             this.priceText1.Text = "Pret €:";
             // 
             // priceLabel1
@@ -241,6 +250,7 @@
             this.priceLabel1.ReadOnly = true;
             this.priceLabel1.Size = new System.Drawing.Size(99, 18);
             this.priceLabel1.TabIndex = 13;
+            this.priceLabel1.TabStop = false;
             // 
             // cumpara1
             // 
@@ -273,6 +283,7 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(40, 18);
             this.textBox5.TabIndex = 16;
+            this.textBox5.TabStop = false;
             this.textBox5.Text = "Brand:";
             // 
             // textBox7
@@ -284,6 +295,7 @@
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(50, 18);
             this.textBox7.TabIndex = 17;
+            this.textBox7.TabStop = false;
             this.textBox7.Text = "Model:";
             // 
             // textBox8
@@ -295,6 +307,7 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(40, 18);
             this.textBox8.TabIndex = 18;
+            this.textBox8.TabStop = false;
             this.textBox8.Text = "Km:";
             // 
             // textBox9
@@ -306,6 +319,7 @@
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(28, 18);
             this.textBox9.TabIndex = 19;
+            this.textBox9.TabStop = false;
             this.textBox9.Text = "An:";
             // 
             // textBox10
@@ -317,6 +331,7 @@
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(50, 18);
             this.textBox10.TabIndex = 20;
+            this.textBox10.TabStop = false;
             this.textBox10.Text = "Pret €:";
             // 
             // brandLabel2
@@ -330,6 +345,7 @@
             this.brandLabel2.ReadOnly = true;
             this.brandLabel2.Size = new System.Drawing.Size(99, 18);
             this.brandLabel2.TabIndex = 21;
+            this.brandLabel2.TabStop = false;
             // 
             // modelLabel2
             // 
@@ -341,6 +357,7 @@
             this.modelLabel2.ReadOnly = true;
             this.modelLabel2.Size = new System.Drawing.Size(99, 18);
             this.modelLabel2.TabIndex = 22;
+            this.modelLabel2.TabStop = false;
             // 
             // kmLabel2
             // 
@@ -352,6 +369,7 @@
             this.kmLabel2.ReadOnly = true;
             this.kmLabel2.Size = new System.Drawing.Size(99, 18);
             this.kmLabel2.TabIndex = 23;
+            this.kmLabel2.TabStop = false;
             // 
             // yearLabel2
             // 
@@ -363,6 +381,7 @@
             this.yearLabel2.ReadOnly = true;
             this.yearLabel2.Size = new System.Drawing.Size(99, 18);
             this.yearLabel2.TabIndex = 24;
+            this.yearLabel2.TabStop = false;
             // 
             // priceLabel2
             // 
@@ -374,6 +393,7 @@
             this.priceLabel2.ReadOnly = true;
             this.priceLabel2.Size = new System.Drawing.Size(99, 18);
             this.priceLabel2.TabIndex = 25;
+            this.priceLabel2.TabStop = false;
             // 
             // cumpara2
             // 
@@ -430,6 +450,7 @@
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(40, 18);
             this.textBox11.TabIndex = 30;
+            this.textBox11.TabStop = false;
             this.textBox11.Text = "Brand:";
             // 
             // textBox12
@@ -441,6 +462,7 @@
             this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(50, 18);
             this.textBox12.TabIndex = 31;
+            this.textBox12.TabStop = false;
             this.textBox12.Text = "Model:";
             // 
             // textBox13
@@ -452,6 +474,7 @@
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(40, 18);
             this.textBox13.TabIndex = 32;
+            this.textBox13.TabStop = false;
             this.textBox13.Text = "Km:";
             // 
             // textBox14
@@ -463,6 +486,7 @@
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(28, 18);
             this.textBox14.TabIndex = 33;
+            this.textBox14.TabStop = false;
             this.textBox14.Text = "An:";
             // 
             // textBox15
@@ -474,6 +498,7 @@
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(50, 18);
             this.textBox15.TabIndex = 34;
+            this.textBox15.TabStop = false;
             this.textBox15.Text = "Pret €:";
             // 
             // brandLabel3
@@ -487,6 +512,7 @@
             this.brandLabel3.ReadOnly = true;
             this.brandLabel3.Size = new System.Drawing.Size(99, 18);
             this.brandLabel3.TabIndex = 35;
+            this.brandLabel3.TabStop = false;
             // 
             // modelLabel3
             // 
@@ -498,6 +524,7 @@
             this.modelLabel3.ReadOnly = true;
             this.modelLabel3.Size = new System.Drawing.Size(99, 18);
             this.modelLabel3.TabIndex = 36;
+            this.modelLabel3.TabStop = false;
             // 
             // kmLabel3
             // 
@@ -509,6 +536,7 @@
             this.kmLabel3.ReadOnly = true;
             this.kmLabel3.Size = new System.Drawing.Size(99, 18);
             this.kmLabel3.TabIndex = 37;
+            this.kmLabel3.TabStop = false;
             // 
             // yearLabel3
             // 
@@ -520,6 +548,7 @@
             this.yearLabel3.ReadOnly = true;
             this.yearLabel3.Size = new System.Drawing.Size(99, 18);
             this.yearLabel3.TabIndex = 38;
+            this.yearLabel3.TabStop = false;
             // 
             // priceLabel3
             // 
@@ -531,6 +560,7 @@
             this.priceLabel3.ReadOnly = true;
             this.priceLabel3.Size = new System.Drawing.Size(99, 18);
             this.priceLabel3.TabIndex = 39;
+            this.priceLabel3.TabStop = false;
             // 
             // cumpara3
             // 
@@ -551,6 +581,7 @@
             this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(40, 18);
             this.textBox16.TabIndex = 41;
+            this.textBox16.TabStop = false;
             this.textBox16.Text = "Brand:";
             // 
             // textBox17
@@ -562,6 +593,7 @@
             this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(50, 18);
             this.textBox17.TabIndex = 42;
+            this.textBox17.TabStop = false;
             this.textBox17.Text = "Model:";
             // 
             // textBox18
@@ -573,6 +605,7 @@
             this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(40, 18);
             this.textBox18.TabIndex = 43;
+            this.textBox18.TabStop = false;
             this.textBox18.Text = "Km:";
             // 
             // textBox19
@@ -584,6 +617,7 @@
             this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(28, 18);
             this.textBox19.TabIndex = 44;
+            this.textBox19.TabStop = false;
             this.textBox19.Text = "An:";
             // 
             // textBox20
@@ -595,6 +629,7 @@
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(50, 18);
             this.textBox20.TabIndex = 45;
+            this.textBox20.TabStop = false;
             this.textBox20.Text = "Pret €:";
             // 
             // cumpara4
@@ -618,6 +653,7 @@
             this.brandLabel4.ReadOnly = true;
             this.brandLabel4.Size = new System.Drawing.Size(99, 18);
             this.brandLabel4.TabIndex = 47;
+            this.brandLabel4.TabStop = false;
             // 
             // modelLabel4
             // 
@@ -629,6 +665,7 @@
             this.modelLabel4.ReadOnly = true;
             this.modelLabel4.Size = new System.Drawing.Size(99, 18);
             this.modelLabel4.TabIndex = 48;
+            this.modelLabel4.TabStop = false;
             // 
             // kmLabel4
             // 
@@ -640,6 +677,7 @@
             this.kmLabel4.ReadOnly = true;
             this.kmLabel4.Size = new System.Drawing.Size(99, 18);
             this.kmLabel4.TabIndex = 49;
+            this.kmLabel4.TabStop = false;
             // 
             // yearLabel4
             // 
@@ -651,6 +689,7 @@
             this.yearLabel4.ReadOnly = true;
             this.yearLabel4.Size = new System.Drawing.Size(99, 18);
             this.yearLabel4.TabIndex = 50;
+            this.yearLabel4.TabStop = false;
             // 
             // priceLabel4
             // 
@@ -662,6 +701,7 @@
             this.priceLabel4.ReadOnly = true;
             this.priceLabel4.Size = new System.Drawing.Size(99, 18);
             this.priceLabel4.TabIndex = 51;
+            this.priceLabel4.TabStop = false;
             // 
             // Form3
             // 
@@ -722,7 +762,7 @@
             this.Controls.Add(this.Audiimage);
             this.Controls.Add(this.VWimage);
             this.Name = "Form3";
-            this.Text = "Dorel Auto Scamroom";
+            this.Text = "Vericu Auto";
             ((System.ComponentModel.ISupportInitialize)(this.VWimage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Audiimage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BMWimage)).EndInit();

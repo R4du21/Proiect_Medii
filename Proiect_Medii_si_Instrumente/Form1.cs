@@ -59,20 +59,38 @@ namespace Proiect_Medii_si_Instrumente
             command.Parameters.AddWithValue("@username", usernameLogin.Text);
             command.Parameters.AddWithValue("@password", passwordLogin.Text);
             conn.Open();
-            SqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
+            try
             {
-                var loadingForm = new Form2();
-                this.Hide();
-                loadingForm.Show();
-                conn.Close();
-                usernameLogin.Text = null;
-                passwordLogin.Text = null;
+                SqlDataReader reader = command.ExecuteReader();
+                reader.Read();
+                if (!reader.HasRows)
+                {
+                    throw new ArgumentException();
+                }
+                var user = (string)reader["Username"];
+                var pass = (string)reader["Password"];
+                if (user == "raduq" && pass == "Testing1")
+                {
+                    var adminForm = new Form4();
+                    this.Hide();
+                    adminForm.Show();
+                    conn.Close();
+                }
+                else if (user != "raduq" && pass != "Testing1")
+                {
+                    var loadingForm = new Form2();
+                    this.Hide();
+                    loadingForm.Show();
+                    conn.Close();
+                }
             }
-            else
+            catch (ArgumentException)
             {
                 MessageBox.Show("N-ai cont veric'.");
-                conn.Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("A intervenit o eroare pe traseu.");
             }
         }
         #endregion
