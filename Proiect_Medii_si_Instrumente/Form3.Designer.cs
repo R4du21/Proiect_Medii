@@ -81,6 +81,11 @@
             this.kmLabel4 = new System.Windows.Forms.TextBox();
             this.yearLabel4 = new System.Windows.Forms.TextBox();
             this.priceLabel4 = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.video1 = new System.Windows.Forms.Button();
+            this.video2 = new System.Windows.Forms.Button();
+            this.video3 = new System.Windows.Forms.Button();
+            this.video4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.VWimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Audiimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BMWimage)).BeginInit();
@@ -703,12 +708,68 @@
             this.priceLabel4.TabIndex = 51;
             this.priceLabel4.TabStop = false;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(991, 601);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 52;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // video1
+            // 
+            this.video1.Location = new System.Drawing.Point(285, 185);
+            this.video1.Name = "video1";
+            this.video1.Size = new System.Drawing.Size(81, 27);
+            this.video1.TabIndex = 53;
+            this.video1.Text = "Video";
+            this.video1.UseVisualStyleBackColor = true;
+            this.video1.Click += new System.EventHandler(this.video1_Click);
+            // 
+            // video2
+            // 
+            this.video2.Location = new System.Drawing.Point(816, 185);
+            this.video2.Name = "video2";
+            this.video2.Size = new System.Drawing.Size(81, 27);
+            this.video2.TabIndex = 54;
+            this.video2.Text = "Video";
+            this.video2.UseVisualStyleBackColor = true;
+            this.video2.Click += new System.EventHandler(this.video2_Click);
+            // 
+            // video3
+            // 
+            this.video3.Location = new System.Drawing.Point(285, 568);
+            this.video3.Name = "video3";
+            this.video3.Size = new System.Drawing.Size(81, 27);
+            this.video3.TabIndex = 55;
+            this.video3.Text = "Video";
+            this.video3.UseVisualStyleBackColor = true;
+            this.video3.Click += new System.EventHandler(this.video3_Click);
+            // 
+            // video4
+            // 
+            this.video4.Location = new System.Drawing.Point(816, 568);
+            this.video4.Name = "video4";
+            this.video4.Size = new System.Drawing.Size(81, 27);
+            this.video4.TabIndex = 56;
+            this.video4.Text = "Video";
+            this.video4.UseVisualStyleBackColor = true;
+            this.video4.Click += new System.EventHandler(this.video4_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1078, 636);
+            this.Controls.Add(this.video4);
+            this.Controls.Add(this.video3);
+            this.Controls.Add(this.video2);
+            this.Controls.Add(this.video1);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.priceLabel4);
             this.Controls.Add(this.yearLabel4);
             this.Controls.Add(this.kmLabel4);
@@ -830,5 +891,10 @@
         private System.Windows.Forms.TextBox kmLabel4;
         private System.Windows.Forms.TextBox yearLabel4;
         private System.Windows.Forms.TextBox priceLabel4;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button video1;
+        private System.Windows.Forms.Button video2;
+        private System.Windows.Forms.Button video3;
+        private System.Windows.Forms.Button video4;
     }
 }

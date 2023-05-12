@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
+using System.Linq;
+using System.Media;
 using System.Windows.Forms;
 
 namespace Proiect_Medii_si_Instrumente
@@ -81,26 +85,20 @@ namespace Proiect_Medii_si_Instrumente
                 var reader = command.ExecuteReader();
                 reader.Read();
                 var sold = (string)reader["Sold"];
+                byte[] img = (byte[])reader["ImagePath"];
+                brandLabel1.Text = (string)reader["Brand"];
+                modelLabel1.Text = (string)reader["Model"];
+                kmLabel1.Text = (string)reader["Mileage"];
+                yearLabel1.Text = (string)reader["Year"];
+                priceLabel1.Text = (string)reader["Price"];
                 if (sold == "0")
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel1.Text = (string)reader["Brand"];
-                    modelLabel1.Text = (string)reader["Model"];
-                    kmLabel1.Text = (string)reader["Mileage"];
-                    yearLabel1.Text = (string)reader["Year"];
-                    priceLabel1.Text = (string)reader["Price"];
                     var ms = new MemoryStream(img);
                     VWimage.Image = Image.FromStream(ms);
                     conn.Close();
                 }
                 else
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel1.Text = (string)reader["Brand"];
-                    modelLabel1.Text = (string)reader["Model"];
-                    kmLabel1.Text = (string)reader["Mileage"];
-                    yearLabel1.Text = (string)reader["Year"];
-                    priceLabel1.Text = (string)reader["Price"];
                     vandut1.Show();
                     cumpara1.Hide();
                     conn.Close();
@@ -124,26 +122,20 @@ namespace Proiect_Medii_si_Instrumente
                 var reader = command.ExecuteReader();
                 reader.Read();
                 var sold = (string)reader["Sold"];
+                byte[] img = (byte[])reader["ImagePath"];
+                brandLabel2.Text = (string)reader["Brand"];
+                modelLabel2.Text = (string)reader["Model"];
+                kmLabel2.Text = (string)reader["Mileage"];
+                yearLabel2.Text = (string)reader["Year"];
+                priceLabel2.Text = (string)reader["Price"];
                 if (sold == "0")
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel2.Text = (string)reader["Brand"];
-                    modelLabel2.Text = (string)reader["Model"];
-                    kmLabel2.Text = (string)reader["Mileage"];
-                    yearLabel2.Text = (string)reader["Year"];
-                    priceLabel2.Text = (string)reader["Price"];
                     var ms = new MemoryStream(img);
                     Audiimage.Image = Image.FromStream(ms);
                     conn.Close();
                 }
                 else
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel2.Text = (string)reader["Brand"];
-                    modelLabel2.Text = (string)reader["Model"];
-                    kmLabel2.Text = (string)reader["Mileage"];
-                    yearLabel2.Text = (string)reader["Year"];
-                    priceLabel2.Text = (string)reader["Price"];
                     vandut2.Show();
                     cumpara2.Hide();
                     conn.Close();
@@ -167,26 +159,20 @@ namespace Proiect_Medii_si_Instrumente
                 var reader = command.ExecuteReader();
                 reader.Read();
                 var sold = (string)reader["Sold"];
+                byte[] img = (byte[])reader["ImagePath"];
+                brandLabel3.Text = (string)reader["Brand"];
+                modelLabel3.Text = (string)reader["Model"];
+                kmLabel3.Text = (string)reader["Mileage"];
+                yearLabel3.Text = (string)reader["Year"];
+                priceLabel3.Text = (string)reader["Price"];
                 if (sold == "0")
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel3.Text = (string)reader["Brand"];
-                    modelLabel3.Text = (string)reader["Model"];
-                    kmLabel3.Text = (string)reader["Mileage"];
-                    yearLabel3.Text = (string)reader["Year"];
-                    priceLabel3.Text = (string)reader["Price"];
                     var ms = new MemoryStream(img);
                     BMWimage.Image = Image.FromStream(ms);
                     conn.Close();
                 }
                 else
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel3.Text = (string)reader["Brand"];
-                    modelLabel3.Text = (string)reader["Model"];
-                    kmLabel3.Text = (string)reader["Mileage"];
-                    yearLabel3.Text = (string)reader["Year"];
-                    priceLabel3.Text = (string)reader["Price"];
                     vandut3.Show();
                     cumpara3.Hide();
                     conn.Close();
@@ -210,26 +196,20 @@ namespace Proiect_Medii_si_Instrumente
                 var reader = command.ExecuteReader();
                 reader.Read();
                 var sold = (string)reader["Sold"];
+                byte[] img = (byte[])reader["ImagePath"];
+                brandLabel4.Text = (string)reader["Brand"];
+                modelLabel4.Text = (string)reader["Model"];
+                kmLabel4.Text = (string)reader["Mileage"];
+                yearLabel4.Text = (string)reader["Year"];
+                priceLabel4.Text = (string)reader["Price"];
                 if (sold == "0")
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel4.Text = (string)reader["Brand"];
-                    modelLabel4.Text = (string)reader["Model"];
-                    kmLabel4.Text = (string)reader["Mileage"];
-                    yearLabel4.Text = (string)reader["Year"];
-                    priceLabel4.Text = (string)reader["Price"];
                     var ms = new MemoryStream(img);
                     Chevroletimage.Image = Image.FromStream(ms);
                     conn.Close();
                 }
                 else
                 {
-                    byte[] img = (byte[])reader["ImagePath"];
-                    brandLabel4.Text = (string)reader["Brand"];
-                    modelLabel4.Text = (string)reader["Model"];
-                    kmLabel4.Text = (string)reader["Mileage"];
-                    yearLabel4.Text = (string)reader["Year"];
-                    priceLabel4.Text = (string)reader["Price"];
                     vandut4.Show();
                     cumpara4.Hide();
                     conn.Close();
@@ -241,26 +221,74 @@ namespace Proiect_Medii_si_Instrumente
             }
 
         }
+
+        private void BuyMusic()
+        {
+            SoundPlayer buy = new SoundPlayer(@"C:\VS Projects\Proiect_Medii_si_Instrumente\buymusic.wav");
+            buy.Play();
+        }
+
+        private void PlayVideo(string link)
+        {
+            Form5 videoForm = new Form5(link);
+            videoForm.Show();
+        }
+
         #endregion
 
         private void cumpara1_Click(object sender, EventArgs e)
         {
             Car1Sold();
+            BuyMusic();
         }
 
         private void cumpara2_Click(object sender, EventArgs e)
         {
             Car2Sold();
+            BuyMusic();
         }
 
         private void cumpara3_Click(object sender, EventArgs e)
         {
             Car3Sold();
+            BuyMusic();
         }
 
         private void cumpara4_Click(object sender, EventArgs e)
         {
             Car4Sold();
+            BuyMusic();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            var loadingForm = new Form2();
+            this.Hide();
+            loadingForm.Show();
+        }
+
+        private void video1_Click(object sender, EventArgs e)
+        {
+            var link = "https://www.youtube.com/watch?v=PGL_lVVG4us";
+            PlayVideo(link);
+        }
+
+        private void video2_Click(object sender, EventArgs e)
+        {
+            var link = "https://www.youtube.com/watch?v=PVMdMKRXpOM";
+            PlayVideo(link);
+        }
+
+        private void video3_Click(object sender, EventArgs e)
+        {
+            var link = "https://www.youtube.com/watch?v=U9Ai9EzaMns";
+            PlayVideo(link);
+        }
+
+        private void video4_Click(object sender, EventArgs e)
+        {
+            var link = "https://www.youtube.com/watch?v=ztgWQmPH5r0";
+            PlayVideo(link);
         }
     }
 }

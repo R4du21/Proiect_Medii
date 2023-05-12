@@ -12,3 +12,13 @@ C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Deb
 C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.Form2.resources
 C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.Form3.resources
 C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.Form4.resources
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\bin\Debug\Interop.WMPLib.dll
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\bin\Debug\AxInterop.WMPLib.dll
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Interop.WMPLib.dll
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\AxInterop.WMPLib.dll
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.csproj.ResolveComReference.cache
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\bin\Debug\Vlc.DotNet.Core.dll
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\bin\Debug\Vlc.DotNet.Core.Interops.dll
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\bin\Debug\Vlc.DotNet.Forms.dll
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.csproj.CopyComplete
+C:\VS Projects\Proiect_Medii_si_Instrumente\Proiect_Medii_si_Instrumente\obj\Debug\Proiect_Medii_si_Instrumente.Form5.resources

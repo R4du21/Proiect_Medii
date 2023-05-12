@@ -214,7 +214,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Vericu Auto - ADMIN AREA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

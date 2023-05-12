@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Media;
 using System.Windows.Forms;
 
 namespace Proiect_Medii_si_Instrumente
@@ -93,11 +94,18 @@ namespace Proiect_Medii_si_Instrumente
                 MessageBox.Show("A intervenit o eroare pe traseu.");
             }
         }
+
+        private void MenuMusic()
+        {
+            SoundPlayer menu = new SoundPlayer(@"C:\VS Projects\Proiect_Medii_si_Instrumente\menumusic.wav");
+            menu.Play();
+        }
         #endregion
 
         public Form1()
         {
             InitializeComponent();
+            MenuMusic();
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)

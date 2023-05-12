@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Media;
+using System.Windows.Forms;
 
 namespace Proiect_Medii_si_Instrumente
 {
@@ -9,6 +10,7 @@ namespace Proiect_Medii_si_Instrumente
             InitializeComponent();
             label3.Hide();
             label4.Hide();
+            LoadingMusic();
         }
 
         private void timer1_Tick(object sender, System.EventArgs e)
@@ -31,6 +33,12 @@ namespace Proiect_Medii_si_Instrumente
                 this.Hide();
                 finalForm.Show();
             }
+        }
+
+        private void LoadingMusic()
+        {
+            SoundPlayer loading = new SoundPlayer(@"C:\VS Projects\Proiect_Medii_si_Instrumente\loadingmusic.wav");
+            loading.Play();
         }
     }
 }
